@@ -32,7 +32,7 @@ describe('Calculator', () => {
     const rows = screen.getAllByRole('row')
 
     expect(rows.length).toBe(4)
-  });
+  })
 
   it('should render operations', () => {
     render(<Calculator />)
@@ -80,7 +80,7 @@ describe('Calculator', () => {
     const input = screen.getByRole('textbox')
 
     expect(input.value).toBe('123')
-  });
+  })
 
   it('should show user input after clicking numbers and operations', () => {
     render(<Calculator />)
