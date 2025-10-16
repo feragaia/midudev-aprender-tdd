@@ -24,7 +24,7 @@ jobs:
           cache: 'npm'
       - run: npm install --legacy-peer-deps --no-fund --no-audit
        #que instale ignorndo los conflictos de version
-      - run : npm run lint 
+      - run: npm run lint 
       - run: npm run build 
       #- name: 'Hello World'
       #  run: echo "Hello World"
