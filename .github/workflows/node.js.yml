@@ -22,13 +22,13 @@ jobs:
         with: 
           node-version: 24
           cache: 'npm'
-      - run: npm install --legacy-peer-deps #que instale ignorndo los conflictos de version
+      - run: npm install --legacy-peer-deps --no--fund --no-audit #que instale ignorndo los conflictos de version
       - run: npm run build 
-      - name: 'Hello World'
-        run: echo "Hello World"
-      - name: 'Mostrar fecha'
-        run : date
+      #- name: 'Hello World'
+      #  run: echo "Hello World"
+      #- name: 'Mostrar fecha'
+      #  run : date
       
-      - name: 'Mostrar contenido directorio'
-        run: ls -al   
+      #- name: 'Mostrar contenido directorio'
+      #  run: ls -al   
     
